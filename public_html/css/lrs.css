@@ -1,0 +1,365 @@
+/*general body code*/
+body  
+{ 
+font-family:arial, verdana, helvetica;  
+background-image:url('../images/paperbg3.gif');
+font-size:14px; 
+background-repeat:no-repeat;
+background-size:cover;
+} 
+
+
+/*layout code*/
+.header_img{
+    width:100%;
+    height:100%; 
+}
+
+header{
+    height:20vh;
+    width: 100%;
+}
+nav
+{
+width: 16%; 
+float: left;
+position:absolute;
+font-family: 'Permanent Marker', cursive;
+font-size: 30px;
+text-align:center;
+line-height:50%;
+}
+
+section
+{
+margin-left:16%;
+float:left;
+width:850px;
+}
+
+section.about{
+    width: 85%;
+    float: right;
+    position: absolute;
+}
+
+.about_text{
+    width:90%;
+    margin-left: 5%;
+}
+
+section.contact
+{
+float:left;
+width:30%;
+height:2000px;
+position:absolute;
+}
+
+section.other
+{
+margin-left:16%;
+float:left;
+width:100%;
+}
+section.friends
+{
+margin-left:16%;
+float:left;
+width:90%;
+height:800px;
+background-image:url('../images/cork.gif');
+background-size:cover;
+}
+aside.post
+{
+float: right;
+width: 14%;
+height: 200px;
+background-image:url('../images/postit3.png');
+background-repeat: no-repeat;
+background-size: cover;
+font-family: 'Handlee', cursive;
+margin-right: 2%;
+margin-top: 1%;
+}
+
+aside.contact
+{
+background-image:url("../images/crumplebg.gif");
+width:25%;
+height:800px;
+float:right;
+position:absolute;
+background-size:cover;
+text-align:center;
+font-size: 18px;
+margin-left:75%;
+}
+
+div
+{
+display:block;
+margin-left:auto;
+margin-right:0px;
+}
+/*images code*/
+img.center
+{
+display: block;  
+margin-left: auto;  
+margin-right: auto; 
+}
+
+img.right
+{
+float:right;
+}
+
+img.CenterLeft
+{
+margin-left: 200px;
+padding-right:10px;
+}
+
+img.contact1{
+    vertical-align:top;
+    padding-right:5px;
+    width:45%;
+    height: 35%;
+}
+
+img.contact2{
+    vertical-align:top;
+    padding-right:5px;
+    width:90%;
+    height: 25%;
+}
+
+.fees{
+    width: 250px;
+    height: 250px;
+}
+
+img.Vtop
+{
+vertical-align:top;
+padding-right:5px;
+}
+/*paragraph code*/
+p.margin
+{
+margin-left:3px;
+}
+
+p.tab
+{
+text-indent: 50px;
+line-height: 20px;
+font-size:1.5vh;
+} 
+
+/*tables code*/
+table
+{
+width:70%;
+padding:10px;
+text-align:center;
+font-size:20px;
+border-width: 2px;
+}
+
+table.friends
+{
+float:left;
+}
+
+table.center
+{
+margin-left:auto;
+margin-right:auto;
+}
+/*headings and rulers*/
+h1.news
+{
+margin-left:210px;
+width: 33%;
+height:60px;
+color:orange;
+font-size: 38px;
+background-image:url('../images/highlight_y2.png');
+background-size:cover;
+}
+
+hr
+{
+width:80%;
+height:3px;
+
+}
+
+
+
+/*slideshow main area*/
+*
+{
+margin:0px;
+}
+
+#slider 
+{
+	height:45%;
+	width:80%;
+	position:absolute;
+	border-radius:4px;
+	overflow:hidden;
+	float:left;
+	cursor:pointer;
+        clear: both;
+}
+
+#image 
+{
+	height:100%;
+	width:100%;
+	position:absolute;
+}
+/*slideshow buttons*/
+.left_hold 
+{
+	height: 400px;
+	width: 100px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.right_hold 
+{
+	height: 400px;
+	width: 100px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.left 
+{
+	height:50px;
+	width:50px;
+	position:absolute;
+	top:40%;
+	left:20px;
+	opacity:0;
+	transition: all .2s ease-in-out 0s;
+}
+
+.right 
+{
+	height:50px;
+	width:50px;
+	position:absolute;
+	top:40%;
+	right:20px;
+	opacity:0;
+	transition: all .5s ease-in-out 0s;
+}
+.left_hold:hover .left 
+{
+	opacity:0.6;
+}
+
+.right_hold:hover .right 
+{
+	opacity:0.6;
+}
+
+/*testimonial page flips and panels for fades*/
+
+div.panel1,p.flip1,div.panel2,p.flip2,div.panel3,p.flip3,div.panel4,p.flip4
+{
+line-height: 30px;
+margin-left:3%;
+margin-right:auto;
+width:76%;
+font-size:16px;
+padding:5px;
+border:solid 1px #666;
+color:black;
+
+}
+
+div.panel1,div.panel2,div.panel3, div.panel4
+{
+background-image:url("../images/crumplepanel.gif");
+background-size:cover;
+background-position:right bottom;
+height:300px;
+display:none;
+border-radius:10px
+}
+
+
+p.flip1,p.flip2,p.flip3, p.flip4
+{
+cursor:pointer;
+background-image:url("../images/crumpleflip.gif");
+background-size:cover;
+background-repeat:no-repeat;
+border-radius:25px;
+}
+
+.lunch_menu{
+    width:80%;
+    height: 900px;
+}
+.red, .blue, .yellow, .purple, .DeepPink, .Aqua, .green, .DeepPink, .orange{
+    font-size: 2.2vw;
+}
+/*link colors for nav bar*/
+a.red:link,a.red:visited,a.red:hover,a.red:active
+{
+color:red;
+text-decoration:none;
+}
+
+a.blue:link,a.blue:visited,a.blue:hover,a.blue:active
+{
+color:blue;
+text-decoration:none;
+}
+
+a.yellow:link,a.yellow:visited,a.yellow:hover,a.yellow:active
+{
+color:yellow;
+text-decoration:none;
+}
+a.purple:link,a.purple:visited,a.purple:hover,a.purple:active
+{
+color:purple;
+text-decoration:none;
+}
+
+a.green:link,a.green:visited,a.green:hover,a.green:active
+{
+color:green;
+text-decoration:none;
+}
+
+a.DeepPink:link,a.DeepPink:visited,a.DeepPink:hover,a.DeepPink:active
+{
+color:DeepPink;
+text-decoration:none;
+}
+
+a.orange:link,a.orange:visited,a.orange:hover,a.orange:active
+{
+color:orange;
+text-decoration:none;
+}
+
+a.Aqua:link,a.Aqua:visited,a.Aqua:hover,a.Aqua:active
+{
+color:Aqua;
+text-decoration:none;
+}

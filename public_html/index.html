@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title>Little Rising Stars</title>
+  <meta charset="utf-8"/>
+  <meta name="Author" content="Benjamin Liston">
+  <meta name="Keywords" content="preschool,VPK,vpre-kindergarten">
+  <meta name="Description" content="Website for Little Rising Stars preschool in Vero Beach Florida">
+<!-- external CSS style sheet -->
+<link rel="stylesheet" type="text/css" href="css/lrs.css"/>
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet"> 
+<!-- external JavaScript file -->
+<script src="js/slide.js"></script>
+</head> 
+<!-- load slide show on page load -->
+<body onload="photoA()">
+
+<header> 
+<img src="images/banner.gif" alt="The little rising stars logo" class ="header_img"/>
+</header>
+<!-- navigation contents stored in external Style sheet -->
+<nav>
+ <a href ="index.html" class="red">About Us</a>
+ <br/>
+<a href ="enrollment.html" class = "blue">Enrollment</a>
+ <br/>
+ <a href ="newsletter.html" class="DeepPink">Newsletter</a>
+ <br/>
+ <a href ="lunch.html" class="yellow">Lunch Menu</a>
+ <br/>
+<a href ="pictures.html" class="green">Pictures</a>
+ <br/>
+ <a href ="testimonials.html" class="purple">Testimonials</a>
+ <br/>
+ <a href ="friends.html" class="Aqua">Our Friends</a>
+ <br/>
+<a href ="contact.html" class="orange">Contact Us</a>
+ <br/>
+ <br/>
+</nav>
+
+
+<section class = "about">
+    <div class ="about_text">
+<p class ="tab">
+<strong>
+We look forward to getting to know your child!
+Our program addresses each child individually. Our mission is to build confidence and love of learning, giving students a solid foundation for a healthy and happy life.
+</strong>
+</p>
+<p class ="tab">
+    <strong>
+Our teachers and staff are dedicated to helping each child discover their unique potential, academically, socially, and interpersonally. We invite you to learn more about us and to visit our center.
+    </strong>
+    </p>
+<p class ="tab">
+    <strong>
+The Creative curriculum for Toddlers and preschool translates research and theory from the field of early childhood education into a practical, easy-to-understand approach to working with children and their families. It is a comprehensive curriculum with a clear organizational structure and a particular focus on routines and experiences.
+    </strong>
+</p>    
+</div>
+<br/>
+<div id="slider">
+<img src="slideshow/img1.jpg" id="image"/>
+<div class="left_hold"><img onClick="photo(-1)" class="left" src="slideshow/arrow_left.png"></div>
+<div class="right_hold"><img onClick="photo(1)" class="right" src="slideshow/arrow_right.png"></div>
+</div>
+
+</section>
+<!-- slide show code -->
+
+<!-- end slide show code -->
+
+ </body>
+</html>
