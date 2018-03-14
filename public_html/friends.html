@@ -1,65 +1,47 @@
 <!DOCTYPE HTML>
 <html>
- <head>
-  <title>Our Friends</title>
-   <meta charset="utf-8"/>
-  <meta name="Author" content="Benjamin Liston">
-  <meta name="Keywords" content="preschool,VPK,vpre-kindergarten">
-  <meta name="Description" content="Website for Little Rising Stars preschool in Vero Beach Florida">
-<!-- external CSS style sheet -->
-<link rel="stylesheet" type="text/css" href="css/lrs.css"/>
-<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"> 
-</head>
- <body>
-
-<header>
-<img src="images/banner.gif" class = "header_img" alt="The little rising stars logo"/>
-</header>
-
- <nav>
-  <a href ="index.html" class="red">About Us</a>
- <br/>
-<a href ="enrollment.html" class = "blue">Enrollment</a>
- <br/>
- <a href ="newsletter.html" class="DeepPink">Newsletter</a>
- <br/>
- <a href ="lunch.html" class="yellow">Lunch Menu</a>
- <br/>
-<a href ="pictures.html" class="green">Pictures</a>
- <br/>
- <a href ="testimonials.html" class="purple">Testimonials</a>
- <br/>
- <a href ="friends.html" class="Aqua">Our Friends</a>
- <br/>
-<a href ="contact.html" class="orange">Contact Us</a>
- <br/>
- <br/>
-</nav>
-<section class="friends">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<table class ="friends">
-<tr>
-<td>
-<a href="http://www.tpixphotos.com/" target="blank"><img src="images/TRphoto.gif" alt=" a business card for tpicphotos.com" width="400" height="150"/>
-</td>
-<td>
-<a href="mailto:phatgreendog@yahoo.com" target="blank"><img src="images/frammis.gif" alt=" a business card the webmaster" width="400" height="150"/>
-</td>
-<td>
-<img src="images/tackface.gif" alt="a smily face made with pushpins" width="200" height="200"/>
-</td>
-</tr>
-<tr>
-<td>
-<a href="http://http://www.teddybearportraits.com/" target="blank"><img src="images/tbp.gif" alt ="teddy bear portraits logo" width="400" height="150"/>
-</td>
-</tr>
-</table>
-<br/>
-</section>
- </body>
+    <head>
+        <title>Our Friends</title>
+        <meta charset="utf-8"/>
+        <meta name="Author" content="Benjamin Liston">
+        <meta name="Keywords" content="preschool,VPK,vpre-kindergarten">
+        <meta name="Description" content="Website for Little Rising Stars preschool in Vero Beach Florida">
+        <!-- external CSS style sheet -->
+        <link rel="stylesheet" type="text/css" href="css/lrs.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/dropdown.css"/>
+        <script src="js/dropdown.js"></script>
+    </head>
+    <body onload="changeName()">
+        <header>
+            <img src="images/banner.gif" class = "header_img" alt="The little rising stars logo"/>
+        </header>
+        
+        <section class="friends">
+            <div class="dropdown">
+                <button onclick="showDropdown()" class="dropbtn" id = "btnDropDown">Menu</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="index.html" class = "red">About Us</a>
+                    <a href="enrollment.html" class = "blue">Enrollment</a>
+                    <a href="testimonials.html" class = "purple">Testimonials</a>
+                    <a href="friends.html" class = "Aqua">Our Friends</a>
+                    <a href="contact.html" class = "orange">Contact Us</a>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <a href="http://www.tpixphotos.com/" target="blank"><img src="images/TRphoto.gif" alt=" a business card for tpicphotos.com" class = "card"/></a>
+            <br/>
+            <a href="mailto:phatgreendog@yahoo.com" target="blank"><img src="images/frammis.gif" alt=" a business card the webmaster" class = "card"/></a>
+            <a href="http://http://www.teddybearportraits.com/" target="blank"><img src="images/tbp.gif" alt ="teddy bear portraits logo" class = "card"/></a>
+            <br/>
+        </section>
+        <script>
+            function changeName(){
+                var btnDrop = document.getElementById("btnDropDown");
+                btnDrop.innerHTML = "Our Friends";
+            }
+        </script>
+    </body>
 </html>

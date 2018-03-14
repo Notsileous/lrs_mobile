@@ -1,134 +1,110 @@
 <!DOCTYPE HTML>
 <html>
- <head>
-  <title>Enrollment</title>
-  <meta charset="utf-8"/>
-  <meta name="Author" content="Benjamin Liston">
-  <meta name="Keywords" content="preschool,VPK,vpre-kindergarten">
-  <meta name="Description" content="Website for Little Rising Stars preschool in Vero Beach Florida">
-<!-- external CSS style sheet -->
-<link rel="stylesheet" type="text/css" href="css/lrs.css"/>
-<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"> 
-<style>
-th
-{
-background-color:#95E084;
-}
-td
-{
-background-color:#84D6E0;
-}
-table
-{
-margin-left:10px;
-width:50px;
-}
-</style>
-</head>
-
-<body>
-<header>
-<img src="images/banner.gif" alt="The little rising stars logo" class = "header_img"/>
-</header>
-
- <nav>
-  <a href ="index.html" class="red">About Us</a>
- <br/>
-<a href ="enrollment.html" class = "blue">Enrollment</a>
- <br/>
- <a href ="testimonials.html" class="purple">Testimonials</a>
- <br/>
- <a href ="friends.html" class="Aqua">Our Friends</a>
- <br/>
-<a href ="contact.html" class="orange">Contact Us</a>
- <br/>
- <br/>
-</nav>
-<section class="other">
-<br/>
-<p class="tab" style = "text-indent: 0">
- A registration fee is due upon enrollment and is due annually by the first Monday of September. The charge is as follows:
-</p>
- <br/>
- <ul>
- <li>$100.00 for 1 child</li>
- <li>$150.00 for a family</li>
- </ul>
- Registration fees are non-refundable.
-
-<br/>
-<br/>
-<table border="yes">
-<caption>
-<strong><em>Schedule of Fees</em></strong>
-</caption>
-<tr>
-<th></th>
-<th>Toddlers</th>
-<th>2 year olds</th>
-<th>3 year olds</th>
-<th>4-5 year olds</th>
-<th>School age</th>
-<th>VPK wrap around</th>
-<th></th>
-</tr>
-
-<tr>
-<th>Full Time</th>
-<td>$145</td>
-<td>$135</td>
-<td>$125</td>
-<td>$115</td>
-<td>$90</td>
-<td>$80</td>
-<td rowspan="6">
-<img src="images/pay.png" alt="money changing hands" class = "fees">
-</td>
-</tr>
-<tr>
-<th>Part Time</th>
-<td>$115</td>
-<td>$100</td>
-<td>$105</td>
-<td>$100</td>
-<td>$80</td>
-<td>$60</td>
-</tr>
-<tr>
-<th>Daily</th>
-<td>$35</td>
-<td>$35</td>
-<td>$25</td>
-<td>$25</td>
-<td>$30</td>
-<td>$20</td>
-</tr>
-<tr>
-<td colspan="7">
-<strong>VPK Morning Wrap:</strong> $20
-</td>
-</tr>
-<tr>
-<td colspan="7"> 
-<strong>Late Fee:</strong> $35
-</td>
-</tr>
-</table>
-
-<br/>
-<ul>
-<li>
-For ELC rates see office
-</li>
-<li>
-ELC requires full time enrollment, part time enrollment requires authorization from ELC
-</li>
-<li>
-Tuition is due every Monday.  Any payment received after Tueday evening is considered  late.  A late fee of <strong>$35</strong> is therefore appliclable.
-</li>
-</ul>
-</section>
-
- </body>
+    <head>
+        <title>Enrollment</title>
+        <meta charset="utf-8"/>
+        <meta name="Author" content="Benjamin Liston">
+        <meta name="Keywords" content="preschool,VPK,vpre-kindergarten">
+        <meta name="Description" content="Website for Little Rising Stars preschool in Vero Beach Florida">
+       <!-- external CSS style sheet -->
+        <link rel="stylesheet" type="text/css" href="css/dropdown.css"/>
+        <link rel="stylesheet" type="text/css" href="css/lrs.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"/> 
+        <script src="js/dropdown.js"></script>
+    </head>
+    <body onLoad = "changeName()">
+        <header>
+            <img src="images/banner.gif" alt="The little rising stars logo" class = "header_img"/>
+        </header>
+        <div class="dropdown">
+            <button onclick="showDropdown()" class="dropbtn" id = "btnDropDown">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html" class = "red">About Us</a>
+                <a href="enrollment.html" class = "blue">Enrollment</a>
+                <a href="testimonials.html" class = "purple">Testimonials</a>
+                <a href="friends.html" class = "Aqua">Our Friends</a>
+                <a href="contact.html" class = "orange">Contact Us</a>
+            </div>
+        </div>
+        <br/>
+        <p class="" style = "margin-top: 10px; text-align: center; padding:10px">
+            <strong>A registration fee is due upon enrollment and is due annually by the first Monday of September.</strong>
+        </p>
+        <h1 style = "text-align: center"><strong><em>Schedule of Fees</em></strong></h1>
+        <ul class="feeList">
+            <li><strong>Registration</strong>
+                <ul>
+                    <li><strong>1 Child: </strong>$100</li>
+                    <li><strong>Family: </strong>$150</li>
+                </ul>
+            </li>
+            <li><strong>Toddlers</strong>
+                <ul>
+                    <li><strong>Full Time: </strong>$145</li>
+                    <li><strong>Part Time: </strong>$115</li>
+                    <li><strong>Daily: </strong>$35</li>
+                </ul>
+            </li>
+            <li><strong>2 Years Old</strong>
+                <ul>
+                    <li><strong>Full Time: </strong>$135</li>
+                    <li><strong>Part Time: </strong>$100</li>
+                    <li><strong>Daily: </strong>$35</li>
+                </ul>
+            </li>
+            <li><strong>3 Years Old</strong>
+                <ul>
+                    <li><strong>Full Time: </strong>$125</li>
+                    <li><strong>Part Time: </strong>$105</li>
+                    <li><strong>Daily: </strong>$25</li>
+                </ul>
+            </li>
+            <li><strong>4-5 Years Old</strong>
+                <ul>
+                    <li><strong>Full Time: </strong>$115</li>
+                    <li><strong>Part Time: </strong>$100</li>
+                    <li><strong>Daily: </strong>$25</li>
+                </ul>
+            </li>
+            <li><strong>School Age:</strong>
+                <ul>
+                    <li><strong>Full Time: </strong>$90</li>
+                    <li><strong>Part Time: </strong>$80</li>
+                    <li><strong>Daily: </strong>$30</li>
+                </ul>
+            </li>
+            <li><strong>VPK Wrap Around</strong>
+                <ul>
+                    <li><strong>Full Time: </strong>$80</li>
+                    <li><strong>Part Time: </strong>$60</li>
+                    <li><strong>Daily: </strong>$20</li>
+                </ul>
+            </li>
+            <li>
+                <strong>VPK Morning Wrap: </strong>$20
+            </li>
+            <li>
+                <strong>Late Fee: </strong>$35
+            </li>
+            <li>
+                For ELC rates see office
+            </li>
+            <li>
+                ELC requires full time enrollment, part time enrollment requires authorization from ELC
+            </li>
+            <li>
+                Tuition is due every Monday.  Any payment received after Tuesday evening is considered  late.  A late fee of <strong>$35</strong> is therefore applicable.
+            </li>
+            <li>
+                 Registration fees are non-refundable.
+            </li>
+        </ul>
+        <script>
+            function changeName(){
+                var btnDrop = document.getElementById("btnDropDown");
+                btnDrop.innerHTML = "Enrollment";
+            }
+        </script>
+    </body>
 </html>
 
